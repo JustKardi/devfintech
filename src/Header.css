@@ -1,0 +1,32 @@
+.navLinks {
+    position: relative;
+    color: #7d49de;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    transition: color 0.3s ease
+}
+
+.navLinks::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #7d49de;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.navLinks:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navLinks:hover {
+    color: #5c3bb7;  /* Darker shade on hover */
+}
