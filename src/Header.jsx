@@ -1,27 +1,31 @@
 import logo from './assets/logo.png';
 import home_icon from './assets/home_icon.svg';
 import shop_icon from './assets/shop_icon.svg';
-import './Header.css';  // Import the CSS file
+import './Header.css';
 
 function Header() {
     const styles = {
         header: {
             backgroundColor: '#F5F5F5',
-            width: '95%',
-            height: '100px',
-            position: 'relative',
-            margin: 'auto',
-            borderRadius: '13px',
-            top: '10px',
+            width: '95%',  // Keep original width
+            height: '100px',  // Keep original height
+            position: 'fixed',  // Fixed position
+            top: '10px',  // Keep original top value
+            left: '50%',
+            transform: 'translateX(-50%)',  // Center horizontally
+            borderRadius: '13px',  // Keep original border radius
             display: 'flex',
-            alignItems: 'center',  // Center vertically
-            justifyContent: 'space-between',  // Space between logo and nav items
-            padding: '0 20px',  // Add padding for spacing
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '0 20px',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',  // Keep original box shadow
+            zIndex: 1000,  // Ensure it stays on top of other elements
         },
         logo: {
-            height: '100%',  // Fit logo within the header height
+            height: '180%',  // Adjusted to fit within the header without overflow
             objectFit: 'contain',
+            position: 'relative',
+            left: '-50px'
         },
         headerText: {
             color: '#7d49de',
@@ -34,12 +38,16 @@ function Header() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: '20px',  // Space between nav items
+            gap: '20px',
         },
         navLinkImg: {
-            height: '30px',  // Adjust size of icons
+            height: '30px',
             marginRight: '10px',
-            verticalAlign: 'middle',  // Align icon with text
+            verticalAlign: 'middle',
+            cursor: 'pointer',  // Indicates the icons are clickable
+        },
+        navLink: {
+            cursor: 'pointer',  // Indicates the text links are clickable
         },
     };
 
@@ -50,10 +58,10 @@ function Header() {
             <div style={styles.navContainer}>
                 <img src={home_icon} style={styles.navLinkImg} alt="Home" />
                 <img src={shop_icon} style={styles.navLinkImg} alt="Shop" />
-                <a href="#" className="navLinks">Enroll</a>
-                <a href="#" className="navLinks">The Team</a>
-                <a href="#" className="navLinks">Our Impact</a>
-                <a href="#" className="navLinks">Volunteer</a>
+                <a href="#" className="navLinks" style={styles.navLink}>Enroll</a>
+                <a href="#" className="navLinks" style={styles.navLink}>The Team</a>
+                <a href="#" className="navLinks" style={styles.navLink}>Our Impact</a>
+                <a href="#" className="navLinks" style={styles.navLink}>Volunteer</a>
             </div>
         </div>
     );
