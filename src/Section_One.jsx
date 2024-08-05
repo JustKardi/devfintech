@@ -1,5 +1,6 @@
 import React from 'react';
 import Typer from './Typer.jsx';
+import './scrollFade.css';  // Import the scroll fade CSS
 
 function SectionOne() {
     const styles = {
@@ -53,27 +54,19 @@ function SectionOne() {
         },
         main: {
             position: 'relative',
-            top: '100px'
+            top: '100px',
+            overflow: 'hidden',
         }
     };
 
     return (
-        <div style={styles.main}>
-            <div style={styles.typerContainer}>
+        <div style={styles.main} className="scroll-fade">
+            <div style={styles.typerContainer} className="scroll-fade">
                 <h1 id="animatedText" style={styles.typer}></h1>
                 <Typer wordOne="  Empower  " wordTwo="  Educate  " wordThree="  Enhance  " elementID="animatedText" />
-                <style>
-                    {`
-                        #animatedText .typed-cursor {
-                            font-size: ${styles.cursor.fontSize};  // Match font size
-                            line-height: ${styles.cursor.lineHeight}; // Align with text
-                            display: ${styles.cursor.display}; // Keep cursor inline
-                            margin-left: ${styles.cursor.marginLeft}; // Adjust margin
-                        }
-                    `}
-                </style>
+                ...
             </div>
-            <div style={styles.aboutUsContainer}>
+            <div style={styles.aboutUsContainer} className="scroll-fade">
                 <h1 style={styles.aboutUsHeader}>About Us</h1>
                 <p style={styles.aboutUsText}>DevFinTech offers a transformative platform to empower and educate the youth in fintech and financial literacy.</p>
             </div>
@@ -82,3 +75,4 @@ function SectionOne() {
 }
 
 export default SectionOne;
+

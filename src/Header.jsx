@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './assets/logo.png';
 import home_icon from './assets/home_icon.svg';
 import shop_icon from './assets/shop_icon.svg';
