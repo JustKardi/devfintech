@@ -30,3 +30,7 @@
 .navLinks:hover {
     color: #5c3bb7;  /* Darker shade on hover */
 }
+
+header {
+    color: rgb(245, 245, 245, 0.6);
+}

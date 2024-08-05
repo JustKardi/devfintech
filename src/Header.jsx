@@ -6,7 +6,7 @@ import './Header.css';
 function Header() {
     const styles = {
         header: {
-            backgroundColor: '#F5F5F5',
+            backgroundColor: 'rgb(245, 245, 245, 0.8)',
             width: '95%',  // Keep original width
             height: '100px',  // Keep original height
             position: 'fixed',  // Fixed position
