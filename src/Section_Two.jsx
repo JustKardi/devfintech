@@ -67,11 +67,63 @@ function Section_Two() {
             alignItems: 'center',
             width: '100%',
             flexWrap: 'wrap', // Allow wrapping on smaller screens
+        },
+        // Circle styles
+        circle: {
+            position: 'absolute',
+            borderRadius: '50%',
+            backgroundColor: '#5e3aaf', // Slightly darker purple
+            zIndex: '-1', // Position behind other elements
+        },
+        circle1: {
+            width: '200px',
+            height: '200px',
+            top: '10%',
+            left: '15%',
+        },
+        circle2: {
+            width: '150px',
+            height: '150px',
+            top: '50%',
+            left: '80%',
+        },
+        circle3: {
+            width: '100px',
+            height: '100px',
+            top: '75%',
+            left: '25%',
+        },
+        // Smaller circles
+        smallCircle1: {
+            width: '60px',
+            height: '60px',
+            top: '20%',
+            left: '70%',
+        },
+        smallCircle2: {
+            width: '80px',
+            height: '80px',
+            top: '40%',
+            left: '30%',
+        },
+        smallCircle3: {
+            width: '50px',
+            height: '50px',
+            top: '70%',
+            left: '60%',
         }
     };
 
     return (
         <div style={styles.main} className="scroll-fade">
+            {/* Circles with slightly darker purple color */}
+            <div style={{ ...styles.circle, ...styles.circle1 }}></div>
+            <div style={{ ...styles.circle, ...styles.circle2 }}></div>
+            <div style={{ ...styles.circle, ...styles.circle3 }}></div>
+            <div style={{ ...styles.circle, ...styles.smallCircle1 }}></div>
+            <div style={{ ...styles.circle, ...styles.smallCircle2 }}></div>
+            <div style={{ ...styles.circle, ...styles.smallCircle3 }}></div>
+
             <div style={styles.contentContainer}>
                 <h1 style={styles.title} className="scroll-fade">Our Mission</h1>
                 <p style={styles.paragraph} className="scroll-fade">

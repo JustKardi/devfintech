@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+/* CSS for changing the highlight color of the page */
+::selection {
+  background-color: #7d49de; /* Highlight color for selected text */
+  color: #f5f5f5; /* Text color of the selected text */
+}
+
+::-moz-selection {
+  background-color: #7d49de; /* Highlight color for selected text in Firefox */
+  color: #f5f5f5; /* Text color of the selected text in Firefox */
+}
+
+/* Optional: Outline color for focus (e.g., keyboard navigation) */
+:focus {
+  outline-color: #7d49de; /* Color for focus outlines */
+  outline-width: 2px; /* Width of the outline */
+  outline-style: solid; /* Style of the outline */
+}

@@ -15,7 +15,7 @@ function CourseSection() {
             position: 'relative',
             height: '100vh', // Full viewport height
             overflow: 'hidden',
-            top: '25vh'
+            top: '25vh',
         },
         title: {
             fontSize: '40px',
@@ -26,21 +26,57 @@ function CourseSection() {
             fontWeight: 'bold',
             fontFamily: '"Roboto", sans-serif',
         },
+        circle: {
+            position: 'absolute',
+            borderRadius: '50%',
+            backgroundColor: 'lightgrey',
+            zIndex: '-1', // Position behind other elements
+        },
+        circle1: {
+            width: '200px',
+            height: '200px',
+            top: '10%',
+            left: '15%',
+        },
+        circle2: {
+            width: '250px',
+            height: '250px',
+            top: '70%',
+            left: '60%',
+        },
+        circle3: {
+            width: '150px',
+            height: '150px',
+            top: '50%',
+            left: '30%',
+        },
+        smallCircle1: {
+            width: '75px',
+            height: '75px',
+            top: '20%',
+            left: '75%',
+        },
+        smallCircle2: {
+            width: '60px',
+            height: '60px',
+            top: '80%',
+            left: '20%',
+        },
     };
 
     return (
         <div style={styles.section}>
-            <h1 style={styles.title} className='scrollFade'>Our Courses</h1>
-            <div className="carousel scrollFade">
+            {/* Light grey circles positioned behind content */}
+            <div style={{ ...styles.circle, ...styles.circle1 }}></div>
+            <div style={{ ...styles.circle, ...styles.circle2 }}></div>
+            <div style={{ ...styles.circle, ...styles.circle3 }}></div>
+            <div style={{ ...styles.circle, ...styles.smallCircle1 }}></div>
+            <div style={{ ...styles.circle, ...styles.smallCircle2 }}></div>
+
+            <h1 style={styles.title} className="scroll-fade">Our Courses</h1>
+            <div className="carousel scroll-fade">
                 <div className="carousel-track">
-                    <div className="carousel-item">
-                        <CourseCard
-                            imgSrc={budget_icon}
-                            title="Budgeting Basics"
-                            description="How to create and stick to a budget."
-                        />
-                    </div>
-                    <div className="carousel-item">
+                <div className="carousel-item">
                         <CourseCard
                             imgSrc={bank_icon}
                             title="Bank Accounts"
@@ -117,3 +153,4 @@ function CourseSection() {
 }
 
 export default CourseSection;
+
