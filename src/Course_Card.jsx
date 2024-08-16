@@ -3,16 +3,14 @@ import React from 'react';
 function CourseCard({ imgSrc, title, description }) {
     const styles = {
         card: {
-            height: '300px',  // Adjusted height for better content fit
-            width: '200px',  // Adjusted width for better content fit
+            height: 'auto', // Let the height adjust based on content
+            width: '75%',  // Ensure the card fits within the carousel item
             backgroundColor: '#7d49de',
             borderRadius: '10px',
             overflow: 'hidden',
             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)',
-            display: 'inline-block',  // Allows multiple cards to be in the same line
-            verticalAlign: 'top',  // Aligns cards to the top
-            margin: '10px',  // Adds spacing between cards
-            padding: '10px 0',
+            margin: '10px 0',
+            padding: '10px',
             color: '#F5F5F5',
             fontFamily: '"Roboto", sans-serif',
             textAlign: 'center',
@@ -22,16 +20,19 @@ function CourseCard({ imgSrc, title, description }) {
             marginBottom: '10px',
         },
         image: {
-            width: '150%',  // 150% size as requested
+            width: '150%',
             height: 'auto',
             position: 'relative',
-            transform: 'translateX(-14%)',  // Center the image horizontally
+            transform: 'translateX(-14%)',
+            marginBottom: '10px', // Add some space between the image and text
         },
         description: {
             fontSize: '14px',
             lineHeight: '1.5',
-            marginTop: '10px',
             padding: '0 10px',
+            textAlign: 'left',
+            wordWrap: 'break-word', // Ensure text wraps within the container
+            whiteSpace: 'pre-wrap',
         },
     };
 

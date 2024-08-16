@@ -1,12 +1,12 @@
 import React from 'react';
-import CourseCard from './Course_Card.jsx';
+import CourseCard from './Course_Card'; // Ensure this import path is correct for your project structure
 import budget_icon from './assets/budget_icon_white.png';
 import bank_icon from './assets/bank_icon_white.png';
 import finance_icon from './assets/finance_icon_white.png';
 import code_icon from './assets/code_icon_white.png';
 import money_icon from './assets/money_icon_white.png';
 import './CourseSection.css'; // Import the CSS file for styling
-import './scrollFade.css'
+import './scrollFade.css'; // Assuming you have additional styles for fading
 
 function CourseSection() {
     const styles = {
@@ -76,11 +76,11 @@ function CourseSection() {
             <h1 style={styles.title} className="scroll-fade">Our Courses</h1>
             <div className="carousel scroll-fade">
                 <div className="carousel-track">
-                <div className="carousel-item">
+                    <div className="carousel-item">
                         <CourseCard
                             imgSrc={bank_icon}
                             title="Bank Accounts"
-                            description="Learning about different types of bank accounts and how they work. manage your income and expenses."
+                            description="Learning about different types of bank accounts and how they work. Manage your income and expenses."
                         />
                     </div>
                     <div className="carousel-item">
@@ -136,7 +136,7 @@ function CourseSection() {
                         <CourseCard
                             imgSrc={money_icon}
                             title="Blockchain & Cryptocurrencies"
-                            description="Basics of blockchain technology and digital currencies like"
+                            description="Basics of blockchain technology and digital currencies."
                         />
                     </div>
                     <div className="carousel-item">
@@ -153,4 +153,3 @@ function CourseSection() {
 }
 
 export default CourseSection;
-

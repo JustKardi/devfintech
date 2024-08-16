@@ -11,10 +11,18 @@
     animation: scroll-left 20s linear infinite;
 }
 
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
 .carousel-item {
     flex: 0 0 auto;
     width: 300px; /* Adjust width as needed */
     margin-right: 20px; /* Space between items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 /* Softer gradient overlay */
