@@ -1,0 +1,26 @@
+.donate-button {
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 3px solid #472b7c;
+    background-color: #7d49de;
+    font-size: 1.4em;
+    color: #F5F5F5;
+    cursor: pointer;
+    box-shadow: 0px 5px #663eb0;
+    transition: all 0.3s ease-in-out;
+}
+.donate-button:hover {
+    background-color: #7042c5;
+    box-shadow: 0px 8px #663eb0;
+    transform: translateY(-3px);
+}
+.donate-button:active {
+    background-color: #5d3ba3;
+    box-shadow: 0px 2px #663eb0;
+    transform: translateY(4px);
+}

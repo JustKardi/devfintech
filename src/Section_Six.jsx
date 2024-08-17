@@ -61,6 +61,7 @@ function SectionSix() {
                             src={image}
                             style={styles.carouselItem}
                             alt={`Sponsor logo ${index + 1}`}
+                            className='sponsor--carousel-item'
                         />
                     ))}
                 </div>

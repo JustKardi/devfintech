@@ -1,0 +1,174 @@
+.mini-circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(173, 173, 173);
+    animation-timing-function: linear;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mini-circle-one {
+    width: 10px;
+    height: 10px;
+    top: 5%;
+    left: 15%;
+    animation: moveOne 10s infinite;
+}
+
+.mini-circle-two {
+    width: 15px;
+    height: 15px;
+    top: 25%;
+    left: 35%;
+    animation: moveTwo 12s infinite;
+}
+
+.mini-circle-three {
+    width: 20px;
+    height: 20px;
+    top: 45%;
+    left: 55%;
+    animation: moveThree 14s infinite;
+}
+
+.mini-circle-four {
+    width: 25px;
+    height: 25px;
+    top: 65%;
+    left: 75%;
+    animation: moveFour 16s infinite;
+}
+
+.mini-circle-five {
+    width: 30px;
+    height: 30px;
+    top: 85%;
+    left: 95%;
+    animation: moveFive 18s infinite;
+}
+
+.mini-circle-six {
+    width: 35px;
+    height: 35px;
+    top: 15%;
+    left: 45%;
+    animation: moveSix 20s infinite;
+}
+
+.mini-circle-seven {
+    width: 40px;
+    height: 40px;
+    top: 35%;
+    left: 65%;
+    animation: moveSeven 22s infinite;
+}
+
+.mini-circle-eight {
+    width: 45px;
+    height: 45px;
+    top: 55%;
+    left: 85%;
+    animation: moveEight 24s infinite;
+}
+
+.mini-circle-nine {
+    width: 50px;
+    height: 50px;
+    top: 75%;
+    left: 25%;
+    animation: moveNine 26s infinite;
+}
+
+.mini-circle-ten {
+    width: 55px;
+    height: 55px;
+    top: 95%;
+    left: 5%;
+    animation: moveTen 28s infinite;
+}
+
+@keyframes moveOne {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(calc(80px - 10%), calc(80px - 10%)); }
+}
+
+@keyframes moveTwo {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(calc(-90px + 10%), calc(90px - 10%)); }
+}
+
+@keyframes moveThree {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(calc(70px - 10%), calc(-70px + 10%)); }
+}
+
+@keyframes moveFour {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(calc(-60px + 10%), calc(60px - 10%)); }
+}
+
+@keyframes moveFive {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(calc(100px - 10%), calc(-100px + 10%)); }
+}
+
+@keyframes moveSix {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(calc(-80px + 10%), calc(80px - 10%)); }
+}
+
+@keyframes moveSeven {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(calc(90px - 10%), calc(-90px + 10%)); }
+}
+
+@keyframes moveEight {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(calc(-100px + 10%), calc(100px - 10%)); }
+}
+
+@keyframes moveNine {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(calc(110px - 10%), calc(-110px + 10%)); }
+}
+
+@keyframes moveTen {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(calc(-120px + 10%), calc(120px - 10%)); }
+}
+.arrow {
+    transition: all 0.3s ease-in-out;
+}
+.arrow:hover {
+    transform: translateY(10px);
+}
+.contact-sidebar {
+    width: 5%;
+    height: 45%;
+    background-color: rgb(125, 73, 222, 0.8);
+    top: 30%;
+    position: fixed;
+    left: 2%;
+    border-radius: 20px;
+    z-index: 999;
+}
+.social-media-icon {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #7d49de;
+    cursor: pointer;
+    background-color: #E0E0E0;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media-icon:hover {
+    box-shadow: 0px 0px 20px #241345;
+}
+
+.icon {
+    color: #7d49de;
+}

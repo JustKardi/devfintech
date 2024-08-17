@@ -9,6 +9,13 @@
     animation: scroll 30s linear infinite;
 }
 
+.sponsor--carousel-item {
+    transition: all 0.3s ease-in-out;
+}
+.sponsor--carousel-item:hover {
+    transform: translateY(-10px);
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0);

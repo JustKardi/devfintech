@@ -23,6 +23,11 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    transition: all 1s;
+}
+
+.carousel-item:hover {
+    transform: translateY(-10px);
 }
 
 /* Softer gradient overlay */

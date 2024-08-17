@@ -1,25 +1,26 @@
 import React from 'react';
 import Typer from './Typer.jsx';
-import './scrollFade.css';  // Import the scroll fade CSS
+import './scrollFade.css';
+import './sectionOne.css';
 
 function SectionOne() {
     const styles = {
         typer: {
             position: 'relative',
             top: '40px',
-            transform: 'translateY(-50%)',  // Center the text vertically
+            transform: 'translateY(-50%)',
             fontFamily: '"Roboto", sans-serif',
             color: '#f5f5f5',
             textAlign: 'center',
             fontSize: '50px',
             textDecoration: 'underline',
-            lineHeight: '1.2',  // Adjust line height for better alignment
+            lineHeight: '1.2',
         },
         cursor: {
-            fontSize: '50px', // Match the cursor size with the text size
-            lineHeight: '1.2', // Ensure cursor is aligned with text
-            display: 'inline-block', // Ensure cursor stays on the same line
-            marginLeft: '-5px', // Adjust margin to bring it closer to the text
+            fontSize: '50px',
+            lineHeight: '1.2',
+            display: 'inline-block',
+            marginLeft: '-5px',
         },
         typerContainer: {
             height: '90px',
@@ -50,18 +51,19 @@ function SectionOne() {
             fontSize: '20px',
             lineHeight: '1.5',
             maxWidth: '600px',
-            padding: '0 20px', // Add some padding for mobile view
+            padding: '0 20px',
         },
         main: {
             position: 'relative',
             top: '100px',
             overflow: 'hidden',
+            height: '100vh', // Ensure the container has enough height
         },
         circle: {
             position: 'absolute',
             borderRadius: '50%',
             backgroundColor: 'lightgrey',
-            zIndex: '-1', // Position behind other elements
+            zIndex: '-1',
         },
         circle1: {
             width: '150px',
@@ -81,7 +83,6 @@ function SectionOne() {
             top: '40%',
             left: '40%',
         },
-        // Additional smaller circles
         smallCircle1: {
             width: '50px',
             height: '50px',
@@ -115,6 +116,7 @@ function SectionOne() {
     };
 
     return (
+        <>
         <div style={styles.main} className="scroll-fade">
             {/* Larger circles positioned behind content */}
             <div style={{ ...styles.circle, ...styles.circle1 }}></div>
@@ -128,16 +130,40 @@ function SectionOne() {
             <div style={{ ...styles.circle, ...styles.smallCircle4 }}></div>
             <div style={{ ...styles.circle, ...styles.smallCircle5 }}></div>
 
+            {/* Mini circles with animation */}
+            <div className='mini-circle mini-circle-one'></div>
+            <div className='mini-circle mini-circle-two'></div>
+            <div className='mini-circle mini-circle-three'></div>
+            <div className='mini-circle mini-circle-four'></div>
+            <div className='mini-circle mini-circle-five'></div>
+            <div className='mini-circle mini-circle-six'></div>
+            <div className='mini-circle mini-circle-seven'></div>
+            <div className='mini-circle mini-circle-eight'></div>
+            <div className='mini-circle mini-circle-nine'></div>
+            <div className='mini-circle mini-circle-ten'></div>
+
+            {/* Your existing content */}
             <div style={styles.typerContainer} className="scroll-fade">
                 <h1 id="animatedText" style={styles.typer}></h1>
                 <Typer wordOne="  Empower  " wordTwo="  Educate  " wordThree="  Enhance  " elementID="animatedText" />
             </div>
-
             <div style={styles.aboutUsContainer} className="scroll-fade">
                 <h1 style={styles.aboutUsHeader}>About Us</h1>
-                <p style={styles.aboutUsText}>DevFinTech offers a transformative platform to empower and educate the youth in fintech and financial literacy.</p>
+                <p style={styles.aboutUsText}>
+                    DevFinTech offers a transformative platform to empower and educate the youth in fintech and financial literacy.
+                </p>
             </div>
+            <p style={{ textAlign: 'center', color: '#7d47de', fontSize: '2em', position: 'relative', top: '60px', fontFamily: '"Roboto", sans-serif' }}>Scroll Down</p>
+            <h1 style={{ textAlign: 'center', color: '#7d47de', fontSize: '5em', position: 'relative', bottom: '0%' }} className='arrow'>&#8615;</h1>
         </div>
+        <div className='contact-sidebar'>
+            <button className='social-media-icon'><i className='fab fa-instagram icon'></i></button>
+            <button className='social-media-icon'><i className='fab fa-tiktok icon'></i></button>
+            <button className='social-media-icon'><i className='fab fa-linkedin-in icon'></i></button>
+            <button className='social-media-icon'><i className='fa-solid fa-phone icon'></i></button>
+            <button className='social-media-icon'><i className='fa-solid fa-envelope icon'></i></button>
+        </div>
+        </>
     );
 }
 
