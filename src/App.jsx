@@ -8,6 +8,7 @@ import SectionFive from './Section_Five.jsx';
 import SectionSix from './Section_Six.jsx';
 import QuoteSection from './QuoteSection.jsx';
 import SectionSeven from './SectionSeven.jsx';
+import Footer from './footer.jsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <SectionSix />
       <QuoteSection />
       <SectionSeven />
+      <Footer />
     </>
   );
 }
