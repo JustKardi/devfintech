@@ -57,7 +57,7 @@ function SectionOne() {
             position: 'relative',
             top: '100px',
             overflow: 'hidden',
-            height: '100vh', // Ensure the container has enough height
+            height: 'auto', // Ensure the container has enough height
         },
         circle: {
             position: 'absolute',

@@ -13,7 +13,7 @@ function CourseSection() {
         section: {
             padding: '20px',
             position: 'relative',
-            height: '100vh', // Full viewport height
+            height: 'auto', // Full viewport height
             overflow: 'hidden',
             top: '25vh',
         },

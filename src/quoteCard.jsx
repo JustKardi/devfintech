@@ -4,7 +4,7 @@ function QuoteCard({ quote, author, occupation, className }) {
             backgroundColor: '#F5F5F5',
             width: '29%',
             color: '#7d49de',
-            height: '25vh',
+            height: 'auto',
             padding: '20px',
             boxShadow: '0px 5px 10px rgba(0,0,0,0.2)',
             borderRadius: '10px',

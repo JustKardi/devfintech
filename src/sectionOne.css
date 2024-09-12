@@ -142,8 +142,8 @@
     transform: translateY(10px);
 }
 .contact-sidebar {
-    width: 5%;
-    height: 45%;
+    width: 60px;
+    height: 310px;
     background-color: rgb(125, 73, 222, 0.8);
     top: 30%;
     position: fixed;

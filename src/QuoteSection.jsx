@@ -6,7 +6,7 @@ function QuoteSection() {
 
     const styles = {
         backgroundColor: '#7d49de',
-        height: '50vh',
+        height: 'auto',
         fontFamily: '"Roboto", sans-serif',
         textAlign: 'center',
         color: '#F5F5F5',

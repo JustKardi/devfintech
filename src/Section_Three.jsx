@@ -7,6 +7,7 @@ function Section_Three() {
             position: 'relative',
             top: '175px',
             overflow: 'hidden',
+            height: 'auto',
         },
         header: {
             textAlign: 'center',

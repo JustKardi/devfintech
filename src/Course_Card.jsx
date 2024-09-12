@@ -4,7 +4,7 @@ function CourseCard({ imgSrc, title, description }) {
     const styles = {
         card: {
             height: 'auto', // Let the height adjust based on content
-            width: '75%',  // Ensure the card fits within the carousel item
+            width: 'auto%',  // Ensure the card fits within the carousel item
             backgroundColor: '#7d49de',
             borderRadius: '10px',
             overflow: 'hidden',
