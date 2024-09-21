@@ -7,7 +7,6 @@ function Header() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // Handle window resize to detect mobile view
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
@@ -20,7 +19,6 @@ function Header() {
         };
     }, []);
 
-    // Toggle mobile menu
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -43,21 +41,22 @@ function Header() {
             zIndex: 1000,
         },
         logoTitleContainer: {
-            display: 'flex',  // Ensure logo and title are next to each other
+            display: 'flex',
             alignItems: 'center',
         },
         logo: {
-            height: isMobile ? '70px' : '80px', // Adjusted slightly larger for desktop
+            height: isMobile ? '90px' : '140px',
             objectFit: 'contain',
-            marginRight: '-25px',  // Add space between logo and title
+            marginRight: isMobile ? '-50px' : '-75px',
+            marginLeft: '-60px',
         },
         headerText: {
             color: '#7d49de',
             fontFamily: '"Roboto", sans-serif',
             textAlign: 'center',
             flex: '1',
-            fontSize: isMobile ? '5vw' : '35px', // Only shrink in mobile, fixed in desktop
-            whiteSpace: 'nowrap',  // Prevents title from wrapping to the next line
+            fontSize: isMobile ? '5vw' : '35px',
+            whiteSpace: 'nowrap',
         },
         navContainer: {
             display: 'flex',
@@ -69,14 +68,6 @@ function Header() {
             height: '30px',
             marginRight: '10px',
             cursor: 'pointer',
-        },
-        navLink: {
-            cursor: 'pointer',
-            color: '#7d49de',
-            textDecoration: 'none',
-            padding: '0 10px',
-            fontSize: '18px',
-            fontFamily: '"Roboto", sans-serif',
         },
         hamburgerIcon: {
             display: 'block',
@@ -118,17 +109,19 @@ function Header() {
             )}
 
             <div style={styles.logoTitleContainer}>
-                <img src={logo} style={styles.logo} alt="Logo" />
-                <h1 style={styles.headerText}>DevFinTech</h1>
+                <a href="index.html" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                    <img src={logo} style={styles.logo} alt="Logo" />
+                    <h1 style={styles.headerText}>DevFinTech</h1>
+                </a>
             </div>
 
             <div style={styles.navContainer}>
                 {!isMobile && (
                     <>
-                        <a href="#" style={styles.navLink}>Enroll</a>
-                        <a href="#" style={styles.navLink}>The Team</a>
-                        <a href="#" style={styles.navLink}>Our Impact</a>
-                        <a href="#" style={styles.navLink}>Volunteer</a>
+                        <a href="#" className="navLinks">Enroll</a>
+                        <a href="/the_team.html" className="navLinks">The Team</a>
+                        <a href="#" className="navLinks">Our Impact</a>
+                        <a href="#" className="navLinks">Volunteer</a>
                     </>
                 )}
                 <img src={shop_icon} style={styles.navLinkImg} alt="Shop" />
@@ -137,7 +130,7 @@ function Header() {
             {isMobile && (
                 <div style={styles.mobileMenu}>
                     <a href="#" style={styles.mobileMenuItem}>Enroll</a>
-                    <a href="#" style={styles.mobileMenuItem}>The Team</a>
+                    <a href="/the_team.html" style={styles.mobileMenuItem}>The Team</a>
                     <a href="#" style={styles.mobileMenuItem}>Our Impact</a>
                     <a href="#" style={styles.mobileMenuItem}>Volunteer</a>
                 </div>

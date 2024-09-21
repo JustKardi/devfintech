@@ -3,7 +3,7 @@ function Footer() {
     const styles = {
         footer__: {
             backgroundColor: '#7d49de',
-            marginBottom: '0px',
+            marginBottom: '-1px',
             padding: '0.1rem',
             textAlign: 'center',
             fontFamily: '"Roboto", sans-serif',

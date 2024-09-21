@@ -1,0 +1,144 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #E0E0E0;
+}
+
+/* Sidebar styling */
+.contact-sidebar {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 100;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #7d49de;
+  color: white;
+  font-size: 1.5rem;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #5c36a6;
+  transform: translateY(-5px);
+}
+
+.contact-button .icon {
+  font-size: 1.7rem;
+}
+
+/* Team container styling */
+.team-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 3em;
+  color: #7d49de;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-member {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.team-member-name {
+  font-size: 1.5em;
+  color: #7d49de;
+  margin: 10px 0;
+}
+
+.team-member-role {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.team-member-bio {
+  font-size: 1em;
+  color: #666;
+}
+
+.arrow {
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  transform: translateY(10px);
+}
+
+.contact-sidebar {
+  width: 60px;
+  height: 310px;
+  background-color: rgb(125, 73, 222, 0.8);
+  top: 52%;
+  position: fixed;
+  left: 2%;
+  border-radius: 20px;
+  z-index: 999;
+}
+
+.social-media-icon {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #7d49de;
+  cursor: pointer;
+  background-color: #E0E0E0;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-media-icon:hover {
+  box-shadow: 0px 0px 20px #241345;
+}
+
+.icon {
+  color: #7d49de;
+}

@@ -6,7 +6,7 @@
     padding: 0 10px;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
-    transition: color 0.3s ease
+    transition: color 0.3s ease;
 }
 
 .navLinks::after {
@@ -15,7 +15,7 @@
     width: 100%;
     height: 2px;
     background-color: #7d49de;
-    bottom: 0;
+    bottom: -3px;  /* Adjust the distance of the underline from the text */
     left: 0;
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -29,8 +29,4 @@
 
 .navLinks:hover {
     color: #5c3bb7;  /* Darker shade on hover */
-}
-
-header {
-    color: rgb(245, 245, 245, 0.6);
 }
