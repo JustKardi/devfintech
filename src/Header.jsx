@@ -121,7 +121,7 @@ function Header() {
                         <a href="#" className="navLinks">Enroll</a>
                         <a href="/the_team.html" className="navLinks">The Team</a>
                         <a href="#" className="navLinks">Our Impact</a>
-                        <a href="#" className="navLinks">Volunteer</a>
+                        <a href="/volunteer.html" className="navLinks">Volunteer</a>
                     </>
                 )}
                 <img src={shop_icon} style={styles.navLinkImg} alt="Shop" />
@@ -132,7 +132,7 @@ function Header() {
                     <a href="#" style={styles.mobileMenuItem}>Enroll</a>
                     <a href="/the_team.html" style={styles.mobileMenuItem}>The Team</a>
                     <a href="#" style={styles.mobileMenuItem}>Our Impact</a>
-                    <a href="#" style={styles.mobileMenuItem}>Volunteer</a>
+                    <a href="/volunteer.html" style={styles.mobileMenuItem}>Volunteer</a>
                 </div>
             )}
         </div>
