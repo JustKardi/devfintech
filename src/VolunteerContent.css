@@ -81,7 +81,9 @@ body {
 }
 
 .form-container {
+    font-size: 25px;
     margin-top: 40px;
+    color: #7d49de;
     background: #fff;
     padding: 20px;
     border-radius: 8px;

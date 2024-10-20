@@ -1,5 +1,4 @@
 import React from 'react';
-import FormfacadeEmbed from "@formfacade/embed-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faHandsHelping, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './VolunteerContent.css';
@@ -31,18 +30,12 @@ const VolunteerContent = () => {
 
             <div className="form-container">
                 <h2>Start a Chapter</h2>
-                <FormfacadeEmbed
-                    formFacadeURL="https://formfacade.com/include/101278880108573731030/form/1FAIpQLSeZdg0nsUnMDfHNV4OSI2DF-ugQ4MBq35ALX7azSphPQb3wqQ/classic.js/?div=ff-compose"
-                    onSubmitForm={() => console.log('Form submitted')}
-                />
+                {/*FORM IFRAME*/}
             </div>
 
             <div className="form-container">
                 <h2>Volunteer Form</h2>
-                <FormfacadeEmbed
-                    formFacadeURL="https://formfacade.com/include/101278880108573731030/form/1FAIpQLSeZdg0nsUnMDfHNV4OSI2DF-ugQ4MBq35ALX7azSphPQb3wqQ/classic.js/?div=ff-compose"
-                    onSubmitForm={() => console.log('Form submitted')}
-                />
+                {/*FORM IFRAME*/}
             </div>
         </div>
     );
