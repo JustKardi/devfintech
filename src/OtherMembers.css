@@ -1,20 +1,29 @@
+/* Container Animation */
 .other-members-container {
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
+/* Title Animation */
 .other-members-title {
     font-size: 2.5em;
     color: #7d49de;
     text-align: center;
     margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in-out forwards;
 }
 
+/* Table Animation */
 .members-table {
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .members-table th, 
@@ -24,12 +33,28 @@
     border-bottom: 1px solid #ddd;
 }
 
+/* Table Header Animation */
 .members-table th {
     background-color: #f4f4f4;
     color: #333;
     font-weight: bold;
-    }
+    opacity: 0;
+    animation: fadeIn 1.8s ease-in-out forwards;
+}
 
+/* Row Hover Effect */
 .members-table tr:hover {
     background-color: #f1f1f1;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
