@@ -118,7 +118,7 @@ function Header() {
             <div style={styles.navContainer}>
                 {!isMobile && (
                     <>
-                        <a href="#" className="navLinks">Enroll</a>
+                        <a href="/enrollment.html" className="navLinks">Enroll</a>
                         <a href="/the_team.html" className="navLinks">The Team</a>
                         <a href="/our_impact.html" className="navLinks">Our Impact</a>
                         <a href="/volunteer.html" className="navLinks">Volunteer</a>
@@ -129,7 +129,7 @@ function Header() {
 
             {isMobile && (
                 <div style={styles.mobileMenu}>
-                    <a href="#" style={styles.mobileMenuItem}>Enroll</a>
+                    <a href="/enrollment.html" style={styles.mobileMenuItem}>Enroll</a>
                     <a href="/the_team.html" style={styles.mobileMenuItem}>The Team</a>
                     <a href="/our_impact.html" style={styles.mobileMenuItem}>Our Impact</a>
                     <a href="/volunteer.html" style={styles.mobileMenuItem}>Volunteer</a>
