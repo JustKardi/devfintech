@@ -1,0 +1,88 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0E0E0;
+}
+
+/* Impact page container */
+.impact-page {
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Section title styling */
+.impact-stats h2, .chapter-list h3 {
+    font-size: 3em;
+    color: #7d49de;
+    margin-bottom: 20px;
+}
+
+/* Impact stats section */
+.impact-stats {
+    margin-bottom: 40px;
+}
+
+/* Stats item styling */
+.stats-item {
+    font-size: 1.5em;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Chapters section */
+.chapter-list {
+    margin-top: 40px;
+}
+
+.chapter-list h3 {
+    color: #7d49de;
+}
+
+/* Chapters grid layout */
+.chapters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Chapter card styling */
+.chapter-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+.chapter-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.chapter-card h4 {
+    font-size: 1.5em;
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.chapter-card p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

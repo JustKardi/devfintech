@@ -19,7 +19,7 @@ const VolunteerContent = () => {
                     </li>
                     <li>
                         <FontAwesomeIcon icon={faHandsHelping} className="step-icon" />
-                        To help volunteer with DevFinTech, fill out the "Volunteer Form" below to start contributing.
+                        To become an intern at DevFinTech, fill out the "Internship Form" below to start contributing.
                     </li>
                     <li>
                         <FontAwesomeIcon icon={faEnvelope} className="step-icon" />
@@ -34,7 +34,7 @@ const VolunteerContent = () => {
             </div>
 
             <div className="form-container">
-                <h2>Volunteer Form</h2>
+                <h2>Internship Form</h2>
                 {/*FORM IFRAME*/}
             </div>
         </div>
