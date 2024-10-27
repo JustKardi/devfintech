@@ -17,7 +17,7 @@ body {
 /* Page title styling */
 .enrollment-content h1 {
     font-size: 3em;
-    color: #7d49de;
+    color: #7d49de; /* Updated to purple */
     margin-bottom: 20px;
 }
 
@@ -38,7 +38,7 @@ body {
 
 .plan h2 {
     font-size: 2em;
-    color: #4A90E2;
+    color: #7d49de; /* Updated to purple */
     margin-bottom: 15px;
 }
 
@@ -73,7 +73,7 @@ body {
 .free-signup-form button {
     margin-top: 15px;
     padding: 12px 20px;
-    background-color: #4A90E2;
+    background-color: #7d49de; /* Updated to purple */
     color: white;
     font-size: 1.2em;
     border: none;
@@ -83,7 +83,7 @@ body {
 }
 
 .free-signup-form button:hover {
-    background-color: #3b73b1;
+    background-color: #5c36a6; /* Darker shade of purple */
 }
 
 /* Paid plan link styling */
@@ -91,7 +91,7 @@ body {
     display: inline-block;
     margin-top: 15px;
     padding: 12px 20px;
-    background-color: #7d49de;
+    background-color: #7d49de; /* Updated to purple */
     color: white;
     font-size: 1.2em;
     border-radius: 5px;
@@ -100,7 +100,7 @@ body {
 }
 
 .plan a:hover {
-    background-color: #5c36a6;
+    background-color: #5c36a6; /* Darker shade of purple */
 }
 
 /* Keyframe animations */

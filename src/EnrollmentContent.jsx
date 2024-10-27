@@ -1,7 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './EnrollmentContent.css';
 
 const EnrollmentContent = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setMessage(''); // Clear any previous messages
+    
+        try {
+            const response = await fetch('YOUR_SCRIPT_URL_HERE', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email })
+            });
+    
+            const text = await response.text(); // Capture the response text
+    
+            if (response.ok) {
+                setMessage('Success! Your data was submitted.');
+                setName('');
+                setEmail('');
+            } else {
+                setMessage(`Error: ${text}`); // Display error details
+            }
+        } catch (error) {
+            setMessage(`There was an error submitting your data: ${error.message}`);
+        }
+    };
+    
+
     return (
         <div className="enrollment-content">
             <h1>Enrollment Plans</h1>
@@ -12,17 +44,28 @@ const EnrollmentContent = () => {
                 <p>Access to introductory content and resources.</p>
                 
                 {/* Simple Sign-Up Form */}
-                <form className="free-signup-form">
+                <form className="free-signup-form" onSubmit={handleSubmit}>
                     <label>
                         Name:
-                        <input type="text" required />
+                        <input
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                        />
                     </label>
                     <label>
                         Email:
-                        <input type="email" required />
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
                     </label>
                     <button type="submit">Sign Up for Free</button>
                 </form>
+                {message && <p>{message}</p>} {/* Display the response message */}
             </div>
 
             {/* Paid Enrollment Sections */}
