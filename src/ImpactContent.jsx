@@ -33,36 +33,36 @@ const chaptersData = [
   { lead: 'Chloe Zheng', school: 'Newport High School', city: 'Bellevue', state: 'Washington' },
   { lead: 'Deepash Raj', school: 'GEMS - The British School - Al Rehab', city: 'New Cairo', state: 'Egypt' },
   { lead: 'Ethan Zhang', school: 'Georgia Chapter Lead', city: '', state: 'Georgia' },
-  { lead: 'Julianne Xu', school: '', city: '', state: '' },
-  { lead: 'Naitik Jain', school: '', city: '', state: '' },
-  { lead: 'Dheeshith Radjendran', school: '', city: '', state: '' },
-  { lead: 'Anjolee Jaimungal', school: '', city: '', state: '' },
-  { lead: 'Atkish S.', school: '', city: '', state: '' },
-  { lead: 'Eashan Rautaray', school: '', city: '', state: '' },
-  { lead: 'Himmet Dhaliwali', school: '', city: '', state: '' },
-  { lead: 'Ismail Chaudry', school: '', city: '', state: '' },
-  { lead: 'Maanav Chittireddy', school: '', city: '', state: '' },
-  { lead: 'Muari Ambati', school: '', city: '', state: '' },
-  { lead: 'Owen Crowley', school: '', city: '', state: '' },
-  { lead: 'Nitesh Kanathal', school: '', city: '', state: '' },
-  { lead: 'Pranav Senthilkumar', school: '', city: '', state: '' },
-  { lead: 'Shravaan', school: '', city: '', state: '' },
-  { lead: 'Sahishnu Jadhav', school: '', city: '', state: '' },
-  { lead: 'Shriya Jagwayan', school: '', city: '', state: '' },
-  { lead: 'Sujay Chava', school: '', city: '', state: '' },
-  { lead: 'William Zhang', school: '', city: '', state: '' },
-  { lead: 'Mya E.', school: '', city: '', state: '' },
-  { lead: 'Austin McDaniel', school: '', city: '', state: '' },
-  { lead: 'Harshith Sai', school: '', city: '', state: '' },
-  { lead: 'Adrian Johnson', school: '', city: '', state: '' },
-  { lead: 'Taha Yacine', school: '', city: '', state: '' },
-  { lead: 'Ekya Dogra', school: '', city: '', state: '' },
-  { lead: 'Nikhil B.', school: '', city: '', state: '' },
-  { lead: 'Vaishnav Bourampeta', school: '', city: '', state: '' },
-  { lead: 'Arya Shirke', school: '', city: '', state: '' },
-  { lead: 'Suditi Chandra', school: '', city: '', state: '' },
-  { lead: 'Dhruva Praveen', school: '', city: '', state: '' },
-  { lead: 'Merwan Indukuri', school: '', city: '', state: '' },
+  { lead: 'Julianne Xu', school: 'Canada Country Lead', city: '', state: 'Canada' },
+  { lead: 'Naitik Jain', school: 'St. Gregorios Senior Secondary School', city: 'Udaipur', state: 'India' },
+  { lead: 'Dheeshith Radjendran', school: 'Westwood High School', city: 'Austin', state: 'Texas' },
+  { lead: 'Anjolee Jaimungal', school: 'Florida State Co-Lead', city: '', state: 'Florida' },
+  { lead: 'Atkish S.', school: 'Illinois State Lead', city: '', state: 'Illinois' },
+  { lead: 'Eashan Rautaray', school: 'London City Lead', city: '', state: 'London' },
+  { lead: 'Himmet Dhaliwali', school: 'Florida State Co-Lead', city: '', state: 'Florida' },
+  { lead: 'Ismail Chaudry', school: 'Louisiana State Lead', city: '', state: 'Louisiana' },
+  { lead: 'Maanav Chittireddy', school: 'New Jersey State Lead', city: '', state: 'New Jersey' },
+  { lead: 'Muari Ambati', school: 'Texas State Co-Lead', city: '', state: 'Texas' },
+  { lead: 'Owen Crowley', school: 'Massachusetts State Lead', city: '', state: 'Massachusetts' },
+  { lead: 'Nitesh Kanathal', school: 'California State Co-Lead', city: '', state: 'California' },
+  { lead: 'Pranav Senthilkumar', school: 'Utah State Lead', city: '', state: 'Utah' },
+  { lead: 'Shravaan', school: 'Texas Co-Lead', city: '', state: 'Texas' },
+  { lead: 'Sahishnu Jadhav', school: 'United Kingdom Country Co-Lead', city: '', state: 'United Kingdom' },
+  { lead: 'Shriya Jagwayan', school: 'India Country Co-Lead', city: '', state: 'India' },
+  { lead: 'Sujay Chava', school: 'Connecticut State Lead', city: '', state: 'Connecticut' },
+  { lead: 'William Zhang', school: 'Maryland State Lead', city: '', state: 'Maryland' },
+  { lead: 'Mya E.', school: 'Washington Liberty High School', city: 'Arlington', state: 'Virginia' },
+  { lead: 'Austin McDaniel', school: 'Winthrop Middle School', city: 'Winthrop', state: 'Massachusetts' },
+  { lead: 'Harshith Sai', school: 'Horner Middle School', city: 'Fremont', state: 'California' },
+  { lead: 'Adrian Johnson', school: 'McKinley Technology High School', city: 'Washington', state: 'D.C.' },
+  { lead: 'Taha Yacine', school: 'Morroco International School', city: 'Casablanca', state: 'Morocco' },
+  { lead: 'Ekya Dogra', school: 'Edison Academy Magnet School', city: 'Edison', state: 'New Jersey' },
+  { lead: 'Nikhil B.', school: 'Vikas The Concept School - Top CBSE School', city: '', state: 'India' },
+  { lead: 'Vaishnav Bourampeta', school: 'North Creek High School', city: 'Mill Creek East', state: 'Washington' },
+  { lead: 'Arya Shirke', school: 'South High School', city: 'South San Francisco', state: 'California' },
+  { lead: 'Suditi Chandra', school: 'Canterbury Middle School', city: 'Los Altos', state: 'California' },
+  { lead: 'Dhruva Praveen', school: 'Evergreen Valley High School', city: 'San Jose', state: 'California' },
+  { lead: 'Merwan Indukuri', school: 'West Windsor-Plainsboro High School North', city: 'Plainsboro', state: 'New Jersey' },
 ];
 
 const getImpactStats = (data) => {
@@ -123,7 +123,9 @@ function ImpactContent() {
             <div key={index} className="chapter-card">
               <h4>{chapter.lead}</h4>
               <p>{chapter.school}</p>
-              <p>{chapter.city}, {chapter.state}</p>
+              <p>
+                {chapter.city}{chapter.city ? ', ' : ''}{chapter.state}
+              </p>
             </div>
           ))}
         </div>
